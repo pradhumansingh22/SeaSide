@@ -1,3 +1,4 @@
+'use client'
 import {
   createContext,
   ReactNode,
@@ -6,7 +7,7 @@ import {
   useState,
 } from "react";
 
-type WebSocketContextType = {
+export type WebSocketContextType = {
   sendMessage: (action: string, clientId: string, data?: any) => void;
   socket: WebSocket | null;
   lastMessage: any;
